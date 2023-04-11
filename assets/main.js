@@ -1,12 +1,14 @@
 const startButton = document.querySelector('.start-button');
-const infoPage = document.querySelector('.info-page');
 const craftButton = document.querySelector('.craft-button');
+const landingPage = document.querySelector('.landing-page');
+const infoPage = document.querySelector('.info-page');
 
 startButton.addEventListener('click', () => {
-    startButton.parentElement.style.display = 'none';
-    infoPage.style.display = 'block';
+  landingPage.style.display = 'none';
+  infoPage.style.display = 'block';
 });
 
 craftButton.addEventListener('click', () => {
-    window.location.href = 'avatar-maker.html';
+  infoPage.style.display = 'none';
+  avatarPage.style.display = 'block';
 });
