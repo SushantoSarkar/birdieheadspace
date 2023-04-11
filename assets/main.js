@@ -12,3 +12,11 @@ craftButton.addEventListener('click', () => {
   infoPage.style.display = 'none';
   avatarPage.style.display = 'block';
 });
+
+function bodyOne() {
+    document.getElementById('feather-one').style.display = 'block';
+    document.getElementById('feather-two').style.display = 'none';
+    document.getElementById('feather-three').style.display = 'none';
+    document.getElementById('feather-four').style.display = 'none';
+    document.getElementById('feather-five').style.display = 'none';
+}
