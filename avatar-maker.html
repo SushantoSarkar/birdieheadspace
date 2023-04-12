@@ -13,13 +13,13 @@
     <!-- <script defer src="assets/form-state.js"></script> -->
 </head>
 
-<body>
-    <header>
-        <div class="logo">
-            <h1>Birdie Headspace</h1>
-        </div>
-    </header>
+<header>
+    <div class="logo">
+        <h1>Birdie Headspace</h1>
+    </div>
+</header>
 
+<body>
     <div class='Artboard'>
         <div class="feather-board">
             <img src="assets/Images/Feather-1.png" id="feather-one">
@@ -29,9 +29,17 @@
             <img src="assets/Images/Feather-5.png" id="feather-five">
         </div>
 
+        <div class="base-board">
+            <img src="assets/Images/base-1.png" id="base-one">
+            <img src="assets/Images/base-2.png" id="base-two">
+            <img src="assets/Images/base-3.png" id="base-three">
+            <img src="assets/Images/base-4.png" id="base-four">
+            <img src="assets/Images/base-5.png" id="base-five">
+        </div>
+
     </div>
     <!-- NAVIGATION BAR -->
-    <!-- <nav class="bottom-nav">
+    <nav class="bottom-nav">
         <ul>
             <li><a href="#feather">Feather</a></li>
             <li><a href="#base">Base</a></li>
@@ -40,59 +48,60 @@
             <li><a href="#hands">Hands</a></li>
             <li><a href="#legs">Legs</a></li>
         </ul>
-    </nav> -->
+    </nav>
 
     <div class="content">
         <div class="buttons">
             <div class="feather tab">
-                <button class="feather-btn" onclick="bodySwitch('feather-one')"><img
+                <button class="feather-btn" onclick="bodyFeatherSwitch('feather-one')"><img
                         src="assets/Images/Feather-1.png"></button>
-                <button class="feather-btn" onclick="bodySwitch('feather-two')"><img
+                <button class="feather-btn" onclick="bodyFeatherSwitch('feather-two')"><img
                         src="assets/Images/Feather-2.png"></button>
-                <button class="feather-btn" onclick="bodySwitch('feather-three')"><img
+                <button class="feather-btn" onclick="bodyFeatherSwitch('feather-three')"><img
                         src="assets/Images/Feather-3.png"></button>
-                <button class="feather-btn" onclick="bodySwitch('feather-four')"><img
+                <button class="feather-btn" onclick="bodyFeatherSwitch('feather-four')"><img
                         src="assets/Images/Feather-4.png"></button>
-                <button class="feather-btn" onclick="bodySwitch('feather-five')"><img
+                <button class="feather-btn" onclick="bodyFeatherSwitch('feather-five')"><img
                         src="assets/Images/Feather-5.png"></button>
             </div>
+        </div>
 
-            <!-- <div class="base tab">
-                <button class="base-btn"><img src="assets/Images/base-1.png"></button>
-                <button class="base-btn"><img src="assets/Images/base-2.png"></button>
-                <button class="base-btn"><img src="assets/Images/base-3.png"></button>
-                <button class="base-btn"><img src="assets/Images/base-4.png"></button>
-                <button class="base-btn"><img src="assets/Images/base-5.png"></button>
+        <div class="buttons">
+            <div class="base tab">
+                <button class="base-btn" onclick="bodyBaseSwitch('base-one')"><img
+                        src="assets/Images/base-1.png"></button>
+                <button class="base-btn" onclick="bodyBaseSwitch('base-two')"><img
+                        src="assets/Images/base-2.png"></button>
+                <button class="base-btn" onclick="bodyBaseSwitch('base-three')"><img
+                        src="assets/Images/base-3.png"></button>
+                <button class="base-btn" onclick="bodyBaseSwitch('base-four')"><img
+                        src="assets/Images/base-4.png"></button>
+                <button class="base-btn" onclick="bodyBaseSwitch('base-five')"><img
+                        src="assets/Images/base-5.png"></button>
             </div>
+        </div>
 
+        <!-- <div class="buttons">
             <div class="text tab">
                 <input type="text" placeholder="Enter your name">
             </div>
+        </div>
 
-            <div class="face tab">
-                <button class="face-btn"><img src="assets/Images/face-1.png"></button>
-                <button class="face-btn"><img src="assets/Images/face-2.png"></button>
-                <button class="face-btn"><img src="assets/Images/face-3.png"></button>
-                <button class="face-btn"><img src="assets/Images/face-4.png"></button>
-                <button class="face-btn"><img src="assets/Images/face-5.png"></button>
-                <button class="face-btn"><img src="assets/Images/face-6.png"></button>
-            </div>
+        <div class="hands tab">
+            <button class="hands-btn" onclick="bodySwitch('hands-one')"><img src="assets/Images/hands-1.png"></button>
+            <button class="hands-btn" onclick="bodySwitch('hands-two')"><img src="assets/Images/hands-2.png"></button>
+            <button class="hands-btn" onclick="bodySwitch('hands-three')"><img src="assets/Images/hands-3.png"></button>
+            <button class="hands-btn" onclick="bodySwitch('hands-four')"><img src="assets/Images/hands-4.png"></button>
+            <button class="hands-btn" onclick="bodySwitch('hands-five')"><img src="assets/Images/hands-5.png"></button>
+        </div>
 
-            <div class="hands tab">
-                <button class="hands-btn"><img src="assets/Images/hands-1.png"></button>
-                <button class="hands-btn"><img src="assets/Images/hands-2.png"></button>
-                <button class="hands-btn"><img src="assets/Images/hands-3.png"></button>
-                <button class="hands-btn"><img src="assets/Images/hands-4.png"></button>
-                <button class="hands-btn"><img src="assets/Images/hands-5.png"></button>
-            </div>
+        <div class="legs tab">
+            <button class="legs-btn" onclick="bodySwitch('legs-one')"><img src="assets/Images/legs-1.png"></button>
+            <button class="legs-btn" onclick="bodySwitch('legs-two')"><img src="assets/Images/legs-2.png"></button>
+            <button class="legs-btn" onclick="bodySwitch('legs-three')"><img src="assets/Images/legs-3.png"></button>
+            <button class="legs-btn" onclick="bodySwitch('legs-four')"><img src="assets/Images/legs-4.png"></button>
+        </div> -->
 
-            <div class="legs tab">
-                <button class="legs-btn"><img src="assets/Images/legs-1.png"></button>
-                <button class="legs-btn"><img src="assets/Images/legs-2.png"></button>
-                <button class="legs-btn"><img src="assets/Images/legs-3.png"></button>
-                <button class="legs-btn"><img src="assets/Images/legs-4.png"></button> -->
-
-
-            <script src="assets/main.js"></script>
+        <script src="assets/main.js"></script>
 
 </html>

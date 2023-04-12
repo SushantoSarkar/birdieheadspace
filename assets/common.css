@@ -25,7 +25,7 @@
     --info-texts:calc(var(--base) * 1.5);
     --headline: calc(var(--base) * 2.2);
     --sub-headline: calc(var(--base) * 1.2);
-    --author-date: calc(var(--base) * 1);
+    --info-texts: calc(var(--base) * 4);
     --quote: calc(var(--base) * 1);
 
     --accent-type: black;
@@ -40,23 +40,28 @@
 /* HEADER LOGO */
 
 
-.logo > h1 {
+.logo {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    
+    background-color: var(--accent-1);
+    padding-top: 0;
+    padding-top: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.logo > h1 {
+    padding-top: .5rem;
     font-family: 'Amari';
     font-weight: 200;
     font-size: var(--logo-texts);
     text-align: center;
     color: var(--accent-2);
-    background-color: var(--accent-1);
-    /* padding-top: 0; */
-    padding-top: 0;
-    padding-left: 5px;
-    padding-right: 5px;
-    border-top: var(--accent-1) solid 1.3px;
 }
+
 
 /* LANDING PAGE */
 
@@ -68,21 +73,18 @@ body {
     padding: 1rem;
     padding-top: 2rem;
     width: 80%;
-    font-family: 'Montserrat';
-    font-size: 17px;
-    font-weight: 500;
     box-sizing: border-box;
 
     justify-content: left;
     align-items: center;
-    background-color: var(--accent-bg);
 }
 
 
 .info-texts {
-    font: 'Montserrat';
+    font-family: 'Montserrat';
+    font-weight: 500;
     font-size: var(--base);
-    margin-top: 9rem;
+    margin: 10%;
 }
 
 
@@ -101,23 +103,13 @@ body {
     background-color: var(--accent-2);
 }
 
-
-.info-page {
-    display: none;
-}
-
-.info-text {
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-
 .button {
   display: inline-block;
   padding: 10px 20px;
   border-radius: 20px;
   background-color: #3c64b1;
   color: #fff;
-  font-size: 16px;
+  font-size: 1rem;
   text-align: center;
   text-decoration: none;
   transition: background-color 0.3s ease;
