@@ -9,15 +9,17 @@ startButton.addEventListener('click', () => {
 });
 
 craftButton.addEventListener('click', () => {
-  infoPage.style.display = 'none';
-  avatarPage.style.display = 'block';
+    window.location.href = 'avatar-maker.html';
 });
 
-function bodyOne() {
-    document.getElementById('feather-one').style.display = 'block';
+
+
+function bodySwitch(selected_class) {
+    document.getElementById('feather-one').style.display = 'none';
     document.getElementById('feather-two').style.display = 'none';
     document.getElementById('feather-three').style.display = 'none';
     document.getElementById('feather-four').style.display = 'none';
     document.getElementById('feather-five').style.display = 'none';
+    document.getElementById(selected_class).style.display = 'block';
 }
 
