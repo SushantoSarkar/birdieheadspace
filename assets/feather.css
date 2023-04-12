@@ -1,0 +1,25 @@
+.feather-board{
+    width: 100%;
+    height: auto;
+    
+}
+
+#feather-one {
+    display: none;
+}
+
+#feather-two {
+    display: none;
+}
+
+#feather-three {
+    display: none;
+}
+
+#feather-four {
+    display: none;
+}
+
+#feather-five {
+    display: none;
+}

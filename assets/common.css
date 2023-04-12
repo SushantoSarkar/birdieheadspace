@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+@font-face {
+    font-family: "Amari";
+    src: url("Amari_Font_3-100VF.ttf");
+}
+
 :root{
   --body-copy:17px;
   --body-copy-line-height: calc(var(--body-copy)*1.2);
@@ -12,69 +17,71 @@
   --accent-bg: #f0f0e4;
 }
 
-.feather-board{
+/*|| BASE VALUES */
+:root {
+    --base:16px;
+    --spacing: 20px;
+    --info-texts:calc(var(--base) * 1.5);
+    --headline: calc(var(--base) * 2.2);
+    --sub-headline: calc(var(--base) * 1.2);
+    --author-date: calc(var(--base) * 1);
+    --quote: calc(var(--base) * 1);
+
+    --accent-type: black;
+    --accent-1: #D8CAAB;
+    --accent-2: #0A4DA6;
+    --accent-bg: #f0f0e4;
+
+    font-family: "Montserrat";
+    font-size: var(--base);
+}
+
+/* HEADER LOGO */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: auto;
-    
+    font-family: 'Amari';
+    font-weight: thin;
+    font-size: .6rem;
+    text-align: center;
+    color: var(--accent-2);
+    background-color: var(--accent-1);
+    padding: 1rem;
+    border-bottom: var(--accent-1) solid 1.3px;
+
 }
 
-#feather-one {
-    display: none;
-}
-
-#feather-two {
-    display: none;
-}
-
-#feather-three {
-    display: none;
-}
-
-#feather-four {
-    display: none;
-}
-
-#feather-five {
-    display: none;
-}
-
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-html, body {
-    height: 100%;
-}
+/* LANDING PAGE */
 
 body {
-    display: flex;
-    justify-content: center;
+    color: var(--accent-type);
+    background-color: var(--accent-bg); /* fallback color */
+    box-sizing: border-box;
+    margin: auto;
+    padding: 1rem;
+    padding-top: 2rem;
+    width: 80%;
+    font-family: 'Montserrat';
+    font-size: 17px;
+    font-weight: 500;
+    box-sizing: border-box;
+
+    justify-content: left;
     align-items: center;
-    background-color: #f2f2f2;
+    background-color: var(--accent-bg);
 }
 
-.landing-page {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+
+.info-texts {
+    font: 'Montserrat';
+    font-size: var(--base);
+    margin-top: 9rem;
 }
 
-.landing-title {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
 
-.landing-text {
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-
-.start-button {
+.intro-buttons{
     background-color: #2ecc71;
     color: #fff;
     border: none;
@@ -85,9 +92,10 @@ body {
     transition: background-color 0.3s ease;
 }
 
-.start-button:hover {
-    background-color: #27ae60;
+.intro-buttons:hover {
+    background-color: var(--accent-2);
 }
+
 
 .info-page {
     display: none;
@@ -96,21 +104,6 @@ body {
 .info-text {
     font-size: 18px;
     margin-bottom: 20px;
-}
-
-.craft-button {
-    background-color: #2ecc71;
-    color: #fff;
-    border: none;
-    border-radius: 20px;
-    font-size: 18px;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.craft-button:hover {
-    background-color: #27ae60;
 }
 
 .button {
