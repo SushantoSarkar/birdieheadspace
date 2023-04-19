@@ -5,17 +5,6 @@
     src: url("Amari_Font_3-100VF.ttf");
 }
 
-/* :root{
-  --body-copy:17px;
-  --body-copy-line-height: calc(var(--body-copy)*1.2);
-
-  --main-heading: 25vw;
-  --main-heading-line-height: calc(var(--main-heading));
-  --accent-type: black;
-  --accent-1: #D8CAAB;
-  --accent-2: #0A4DA6;
-  --accent-bg: #f0f0e4;
-} */
 
 /*|| BASE VALUES */
 :root {
@@ -27,18 +16,19 @@
     --sub-headline: calc(var(--base) * 1.2);
     --info-texts: calc(var(--base) * 4);
     --quote: calc(var(--base) * 1);
+    --info-text-top-padding: calc(var(--base) * 5);
 
-    --accent-type: black;
+    --accent-type: white;
     --accent-1: #D8CAAB;
-    --accent-2: #0A4DA6;
-    --accent-bg: #f0f0e4;
+    --accent-2: #FDFF8E;
+    --accent-bg: radial-gradient(44.77% 121.32% at 65.68% 52.27%, #030025 0%, #001E25 100%);
 
     font-family: "Montserrat";
     font-size: var(--base);
 }
 
-/* HEADER LOGO */
 
+/* HEADER LOGO */
 
 .logo {
     position: fixed;
@@ -46,7 +36,7 @@
     left: 0;
     width: 100%;
     
-    background-color: var(--accent-1);
+    /* background-color: var(--accent-1); */
     padding-top: 0;
     padding-top: 0;
     padding-left: 5px;
@@ -56,65 +46,12 @@
 .logo > h1 {
     padding-top: .5rem;
     font-family: 'Amari';
-    font-weight: 200;
+    font-weight: 100;
     font-size: var(--logo-texts);
     text-align: center;
-    color: var(--accent-2);
+    /* color: white; */
+    color: #FDFF8E;
+    text-shadow: 0px 0px 5px #FBFF35;
 }
 
 
-/* LANDING PAGE */
-
-body {
-    color: var(--accent-type);
-    background-color: var(--accent-bg); /* fallback color */
-    box-sizing: border-box;
-    margin: auto;
-    padding: 1rem;
-    padding-top: 2rem;
-    width: 80%;
-    box-sizing: border-box;
-
-    justify-content: left;
-    align-items: center;
-}
-
-
-.info-texts {
-    font-family: 'Montserrat';
-    font-weight: 500;
-    font-size: var(--base);
-    margin: 10%;
-}
-
-
-.intro-buttons{
-    background-color: #2ecc71;
-    color: #fff;
-    border: none;
-    border-radius: 20px;
-    font-size: 18px;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.intro-buttons:hover {
-    background-color: var(--accent-2);
-}
-
-.button {
-  display: inline-block;
-  padding: 10px 20px;
-  border-radius: 20px;
-  background-color: #3c64b1;
-  color: #fff;
-  font-size: 1rem;
-  text-align: center;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-.button:hover {
-  background-color: #21468b;
-}

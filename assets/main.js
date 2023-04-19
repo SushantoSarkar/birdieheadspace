@@ -3,6 +3,8 @@ const craftButton = document.querySelector('.craft-button');
 const landingPage = document.querySelector('.landing-page');
 const infoPage = document.querySelector('.info-page');
 
+infoPage.style.display = 'none';
+
 startButton.addEventListener('click', () => {
   landingPage.style.display = 'none';
   infoPage.style.display = 'block';
