@@ -21,6 +21,7 @@
     --accent-type: white;
     --accent-1: #D8CAAB;
     --accent-2: #FDFF8E;
+    --accent-3: #f835ff;
     --accent-hover: black;
     --accent-bg: radial-gradient(44.77% 121.32% at 65.68% 52.27%, #030025 0%, #001E25 100%);
 
@@ -67,9 +68,13 @@
     font-weight: 100;
     font-size: var(--logo-texts);
     text-align: center;
-    color: white;
     color: #FDFF8E;
-    text-shadow: 0px 0px 5px #FBFF35;
+    text-shadow: 0px 0px 5px var(--accent-2);
+    text-decoration: none;
+}
+
+.logo > h1 a:hover {
+  text-shadow: 0px 0px 10px var(--accent-3);
 }
 
 
@@ -81,4 +86,57 @@ body {
     width: 80%;
     box-sizing: border-box;
     background: var(--accent-bg);
+}
+
+.Artboard {
+
+}
+
+
+
+/* BOTTOM NAVIGATION */
+.bottom-nav {
+  background-color: #fff;
+  box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.bottom-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+.bottom-nav li {
+  flex: 1;
+  text-align: center;
+  margin: 0;
+}
+
+.bottom-nav a {
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+  color: #333;
+  transition: all 0.3s ease-in-out;
+}
+
+.bottom-nav a:hover {
+  background-color: #eee;
+}
+
+.bottom-nav a i {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.bottom-nav a span {
+  font-size: 12px;
+  text-transform: uppercase;
 }
