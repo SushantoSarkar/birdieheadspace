@@ -1,14 +1,6 @@
 /* LANDING PAGE */
 
-body {
-    box-sizing: border-box;
-    margin: auto;
-    padding: 1rem;
-    /* padding-top: var(--info-text-top-padding); */
-    width: 80%;
-    box-sizing: border-box;
-    background: var(--accent-bg);
-}
+
 
 
 .info-texts {
@@ -38,6 +30,7 @@ body {
 
 .intro-buttons:hover {
     background-color: var(--accent-2);
+    color: var(--accent-hover);
 }
 
 .button {
