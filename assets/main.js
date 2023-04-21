@@ -1,20 +1,19 @@
-const startButton = document.querySelector('.start-button');
-const craftButton = document.querySelector('.craft-button');
-const landingPage = document.querySelector('.landing-page');
-const infoPage = document.querySelector('.info-page');
+//   document.querySelector('.feather-board').style.display = 'none';
 
-infoPage.style.display = 'none';
+function reset() {
+    document.querySelectorAll('.tab').forEach(element => {
+        element.style.display = 'none';
+    });
+    document.querySelectorAll('.birdie-part').forEach(element => {
+        element.style.display = 'none';
+    });
+}
 
-startButton.addEventListener('click', () => {
-  landingPage.style.display = 'none';
-  infoPage.style.display = 'block';
-});
-
-craftButton.addEventListener('click', () => {
-    window.location.href = 'avatar-maker.html';
-});
-
-
+function displayOptions(option_name) {
+    console.log('click', document.querySelector(option_name))
+    reset()
+    document.querySelector(option_name).style.display = 'block';
+}
 
 function bodyFeatherSwitch(selected_class) {
     document.getElementById('feather-one').style.display = 'none';
@@ -23,6 +22,7 @@ function bodyFeatherSwitch(selected_class) {
     document.getElementById('feather-four').style.display = 'none';
     document.getElementById('feather-five').style.display = 'none';
     document.getElementById(selected_class).style.display = 'block';
+    document.getElementById(selected_class).classList.remove('birdie-part')
 }
 
 function bodyBaseSwitch(selected_class) {
