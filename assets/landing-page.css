@@ -1,8 +1,5 @@
 /* LANDING PAGE */
 
-
-
-
 .info-texts {
     font-family: 'Montserrat';
     font-weight: 500;
@@ -20,12 +17,13 @@
     color: var(--accent-2);
     box-sizing: border-box;
     border: 1px solid var(--accent-2);
-    border-radius: 20px;
-    font-size: 18px;
-    padding: 10px 20px;
+    border-radius: 40px;
+    font-size: var(--base);
+    padding: 10px 15px;
     cursor: pointer;
     transition: background-color 0.3s ease;
     font-weight: 600;
+    text-decoration: none;
 }
 
 .intro-buttons:hover {
@@ -35,16 +33,10 @@
 
 .button {
   display: inline-block;
-  padding: 10px 20px;
-  border-radius: 20px;
-  background-color: #3c64b1;
-  color: #fff;
+
+
   font-size: 1rem;
   text-align: center;
   text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-.button:hover {
-  background-color: #21468b;
+  
 }
