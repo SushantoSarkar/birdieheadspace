@@ -122,6 +122,11 @@ body {
   text-align: center;
   margin: 0;
 
+  display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
 }
 
 .bottom-nav li img{
