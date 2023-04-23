@@ -11,8 +11,10 @@ function reset() {
 
 function displayOptions(option_name) {
     console.log('click', document.querySelector(option_name))
-    reset()
-    document.querySelector(option_name).style.display = 'block';
+    document.querySelectorAll('.tab').forEach(element => {
+        element.classList.remove('active-tab')
+    });
+    document.querySelector(option_name).classList.add('active-tab');
 }
 
 function bodyFeatherSwitch(selected_class) {

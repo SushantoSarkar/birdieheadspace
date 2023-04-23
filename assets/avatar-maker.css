@@ -1,30 +1,42 @@
 /* AVATAR ELEMENTS BUTTONS */
 .content {
   width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-top: 1rem;
-  margin-top: 0.5rem;
+  margin-top: 130%;
+  margin-bottom: 10%;
   border: 1px solid var(--accent-2);
   overflow-x: auto;
 }
 
-.content::-webkit-scrollbar{
-    width: 0;
-
+.content > .tab {
+  overflow-x: auto;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction:row;
+  justify-content:left;
+  align-items: left;
+  display: none;
+  height: fit-content;
+  width: 100%;
+  background: transparent;
 }
 
-.content .buttons {
-    min-width: 110px;
-    height: 110px;
-    line-height: 110px;
+/* .content::-webkit-scrollbar{
+    width: 0;
+
+} */
+
+/* .content > .buttons {
+    min-width: 7rem;
+    height: 5rem;
+    line-height: 3rem;
     text-align: center;
     background: transparent;
     border: 1px solid var(--accent-2);
-    margin-right: 2px;
+    margin: 2px;
+} */
+
+.content .active-tab {
+  display: flex;
 }
 
 /* .buttons-wrapper {
@@ -41,17 +53,21 @@
   padding: 0;
 } */
 
-.feather-btn, .base-btn {
-  background: none;
+/* .feather-btn, 
+.base-btn,
+.face-btn,
+.hands-btn,
+.legs-btn {
+  background: var(--accent-bg);
   border: none;
   cursor: pointer;
   margin-right: 10px;
   padding: 0;
     
   display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-}
+  flex-wrap: nowrap;
+  justify-content:space-evenly;
+} */
 
 .feather-btn img {
   width: 5rem;
