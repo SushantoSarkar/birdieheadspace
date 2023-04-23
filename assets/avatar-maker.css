@@ -8,6 +8,22 @@
   align-items: center;
   /* padding-top: 10rem; */
   border: 1px solid var(--accent-2);
+  overflow-x: auto;
+}
+
+.content::-webkit-scrollbar{
+    width: 0;
+
+}
+
+.content .buttons {
+    min-width: 110px;
+    height: 110px;
+    line-height: 110px;
+    text-align: center;
+    background: transparent;
+    border: 1px solid var(--accent-2);
+    margin-right: 2px;
 }
 
 .buttons-wrapper {
@@ -15,16 +31,16 @@
   overflow-x: scroll;
 }
 
-.buttons {
+/* .buttons {
   display:flex;
   flex-wrap: nowrap;
   justify-content: flex-start;
   align-items: center;
   margin: 10px;
   padding: 0;
-}
+} */
 
-.feather-btn {
+.feather-btn, .base-btn {
   background: none;
   border: none;
   cursor: pointer;
@@ -33,6 +49,6 @@
 }
 
 .feather-btn img {
-  width: 50px;
-  height: 50px;
+  width: 5rem;
+  height: 5rem;
 }
