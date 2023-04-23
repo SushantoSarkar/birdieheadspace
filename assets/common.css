@@ -44,10 +44,12 @@
     }
 }
 
-/* HEADER LOGO */
-* {border: 1px solid white;
+/* NEED TO TAKE THIS OFFFFF */
+/* * {border: 1px solid white;
 box-sizing: border-box;
-}
+} */
+
+/* HEADER LOGO */
 
 .logo {
     position: fixed;
@@ -91,8 +93,21 @@ body {
     background: var(--accent-bg);
 }
 
+/* ARTBOARD */
 .Artboard {
+  width: 100%;
+  height: 200px;
+  overflow-x: scroll;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
 
+/* BIRDIE PARTS */
+.birdie-part {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
 }
 
 
@@ -136,24 +151,3 @@ body {
 
 }
 
-.bottom-nav a {
-  display: block;
-  text-decoration: none;
-  padding: 10px;
-  color: #333;
-  transition: all 0.3s ease-in-out;
-}
-
-.bottom-nav a:hover {
-  background-color: #eee;
-}
-
-.bottom-nav a i {
-  font-size: 24px;
-  margin-bottom: 5px;
-}
-
-.bottom-nav a span {
-  font-size: 12px;
-  text-transform: uppercase;
-}
