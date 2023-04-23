@@ -45,16 +45,20 @@
 }
 
 /* NEED TO TAKE THIS OFFFFF */
-/* * {border: 1px solid white;
+* {border: 1px solid white;
 box-sizing: border-box;
-} */
+}
 
 /* HEADER LOGO */
+header{
+  width: 100%;
+}
 
 .logo {
     position: fixed;
     top: 0;
     left: 0;
+    right: 0;
     width: 100%;
     
     /* background-color: var(--accent-1); */
@@ -85,33 +89,49 @@ box-sizing: border-box;
 
 body {
     box-sizing: border-box;
-    margin: auto;
-    padding: 1rem;
+    margin: 0;
+    padding: 0;
     /* padding-top: var(--info-text-top-padding); */
-    width: 80%;
+    width: 90%;
     box-sizing: border-box;
     background: var(--accent-bg);
 }
 
 /* ARTBOARD */
 .Artboard {
-  background: var(--accent-bg);
-  border: 1px solid var(--accent-2);
-  top: 20rem;
+  vertical-align:baseline ;
   width: 100%;
-  height: 400px;
-  overflow-x: scroll;
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
+  /* max-width: 100vw; */
+  overflow-x: auto;
+  white-space: nowrap;
+  /* -webkit-overflow-scrolling: touch; */
+  background: rgba(253, 255, 142, 0.1);
+  margin-top: 5rem;
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
 }
 
-/* BIRDIE PARTS */
+/* Apply these styles to each board */
+/* .feather-board,
+.base-board,
+.face-board,
+.hands-board,
+.legs-board {
+  display: inline-block;
+  width: 80%;
+  height: 10%;
+  white-space: normal;
+} */
+
+/* Apply these styles to each image inside the boards */
 .birdie-part {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
+  display: space-around;
+  max-width: 100%;
+  height: auto;
+  width: 5rem;
+  height: 5rem;
 }
+
 
 
 
