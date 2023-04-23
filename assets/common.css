@@ -99,37 +99,41 @@ body {
 
 /* ARTBOARD */
 .Artboard {
-  vertical-align:baseline ;
+  position: absolute;
+  margin-top: 2rem;
+  /* margin-bottom: 6rem; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+  width: 20rem;
+  height: 30rem;
+
+  /* vertical-align:baseline ;
   width: 100%;
-  /* max-width: 100vw; */
   overflow-x: auto;
-  white-space: nowrap;
+  white-space: nowrap; */
   /* -webkit-overflow-scrolling: touch; */
   background: rgba(253, 255, 142, 0.1);
-  margin-top: 5rem;
+  /* margin-top: 5rem;
   margin-right: 1.5rem;
   margin-left: 1.5rem;
+  height: 100% */
 }
 
 /* Apply these styles to each board */
-/* .feather-board,
+.feather-board,
 .base-board,
 .face-board,
 .hands-board,
 .legs-board {
-  display: inline-block;
-  width: 80%;
-  height: 10%;
-  white-space: normal;
-} */
+  display: none;
+  
+}
 
 /* Apply these styles to each image inside the boards */
 .birdie-part {
-  display: space-around;
-  max-width: 100%;
-  height: auto;
-  width: 5rem;
-  height: 5rem;
+  display: none;
+  
 }
 
 
