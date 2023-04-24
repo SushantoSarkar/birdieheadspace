@@ -8,22 +8,28 @@
 
 /*|| BASE VALUES */
 :root {
+
+  /* TYPE SETTINGS  */
     --base:1rem;
     --spacing: 20px;
     --logo-texts:calc(var(--base) * 1.2);
     --info-texts:calc(var(--base) * 1.5);
     --headline: calc(var(--base) * 2.2);
     --sub-headline: calc(var(--base) * 1.2);
-    --info-texts: calc(var(--base) * 4);
     --quote: calc(var(--base) * 1);
     --info-text-top-padding: calc(var(--base) * 5);
 
+    /* SPACE SETTINGS  */
+
+
+    /* COLORSSSS */
     --accent-type: white;
     --accent-1: #D8CAAB;
     --accent-2: #FDFF8E;
     --accent-3: #f835ff;
     --accent-hover: black;
     --accent-bg: radial-gradient(44.77% 121.32% at 65.68% 52.27%, #030025 0%, #001E25 100%);
+    --accent-transperent:rgba(253, 255, 142, 0.1);
 
     font-family: "Montserrat";
     font-size: var(--base);
@@ -41,6 +47,8 @@
         --info-texts: calc(var(--base) * 4);
         --quote: calc(var(--base) * 1);
         --info-text-top-padding: calc(var(--base) * 5);
+
+        
     }
 }
 
@@ -62,9 +70,9 @@ height: 4rem;
 }
 
 /* NEED TO TAKE THIS OFFFFF */
-/* * {border: 1px solid white;
+* {border: 1px solid white;
 box-sizing: border-box;
-} */
+}
 
 /* HEADER LOGO */
 header{
@@ -109,39 +117,10 @@ body {
     margin: 0;
     padding: 0;
     /* padding-top: var(--info-text-top-padding); */
-    width: 90%;
+    width: 100%;
     box-sizing: border-box;
     background: var(--accent-bg);
 }
-
-/* ARTBOARD */
-.Artboard {
-  position: absolute;
-  margin-top: var(--base);
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -70%);
-  width: 20rem;
-  height: 25rem;
-  background: rgba(253, 255, 142, 0.1);
-}
-
-/* Apply these styles to each board */
-.feather-board,
-.base-board,
-.face-board,
-.hands-board,
-.legs-board {
-  display:contents;
-  
-}
-
-/* Apply these styles to each image inside the boards */
-.birdie-part {
-  display: contents;
-  /* align-items: center; */
-}
-
 
 
 
@@ -151,10 +130,16 @@ body {
   justify-content:space-evenly;
   align-items: center;
   height: 4rem;
-  background: rgba(253, 255, 142, 0.1);
+  background: var(--accent-transperent);
   position: fixed;
   bottom: 0;
   width: 100%;
+}
+
+.bottom-nav button:hover {
+  transform: scale(1.3);
+  background-color: var(--accent-2);
+  transition: all 0.1s ease;
 }
 
 .bottom-nav li {
@@ -171,7 +156,7 @@ body {
 }
 
 .bottom-nav img {
-  width: 4rem;
-  height: 4rem;
+  width: 3rem;
+  height: 3rem;
 }
 
