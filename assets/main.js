@@ -63,18 +63,18 @@ function bodyLegsSwitch(selected_class) {
     document.getElementById(selected_class).style.display = 'block';
 }
 
+// Get all navigation buttons
+var navButtons = document.querySelectorAll('.bottom-nav button');
 
-function downloadAvatar() {
-  var artboard = document.querySelector(".Artboard");
-  html2canvas(artboard).then(function(canvas) {
-    var link = document.createElement("a");
-    link.href = canvas.toDataURL("image/png");
-    link.download = "birdie-avatar.png";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+// Loop through each button and add a click event listener
+navButtons.forEach(function(button) {
+  button.addEventListener('click', function() {
+    // Remove active class from all buttons
+    navButtons.forEach(function(button) {
+      button.classList.remove('active');
+    });
+
+    // Add active class to clicked button
+    this.classList.add('active');
   });
-}
-
-var downloadButton = document.getElementById("download-btn");
-downloadButton.addEventListener("click", downloadAvatar);
+});

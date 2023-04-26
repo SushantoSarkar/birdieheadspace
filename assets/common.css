@@ -152,6 +152,12 @@ body {
   transition: all 0.1s ease;
 }
 
+.bottom-nav button:active{
+  transform: scale(1.3);
+  background-color: var(--accent-2);
+}
+
+
 .bottom-nav li {
   list-style: none;
   border: var(--accent-2);
