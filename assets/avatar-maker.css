@@ -1,5 +1,6 @@
 /* ARTBOARD */
 .Artboard {
+  border-radius: 15px;
   position: absolute;
   margin-top: var(--base);
   top: 53%;
@@ -43,6 +44,7 @@
 
 /* AVATAR ELEMENTS BUTTONS */
 .content {
+  border-radius: 10px;
   position: relative;
   margin-top: 29rem;
   width: 100%;
@@ -52,6 +54,7 @@
 }
 
 .content > .tab {
+  border-radius: 10px;
   overflow-x: auto;
   overflow-y: hidden;
   display: flex;
@@ -61,20 +64,21 @@
   display: none;
   height: fit-content;
   width: 100%;
+  gap: 5px;
   /* background: transparent; */
 }
-
-
-/* .content::-webkit-scrollbar{
-    width: 0;
-
-} */
-
-
 
 .content .active-tab {
   display: flex;
 }
+
+.content button:hover {
+  /* border-radius: 10px; */
+  transform: scale(1.1);
+  /* background-color: var(--accent-transperent); */
+  transition: all 0.1s ease;
+}
+
 
 @media (min-width: 450px) {
   .content .active-tab {
@@ -99,6 +103,33 @@
     z-index: 1;
 }
 
+  .birdie-part {
+  position: absolute;
+  margin-top: var(--base);
+  top: 5.7%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  width: 29.7em;
+  height: 35.775rem;
+  background: transparent;
+  display: contents;
+  z-index: 3;
+}
+
+  .birdie-part-ft{
+  position: absolute;
+  margin-top: var(--base);
+  top: 7.7%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  width: 29.7em;
+  height: 35.775rem;
+  background: transparent;
+  display: contents;
+  z-index: 2;
+  }
+
+
   .content .active-tab{
     width: 40%;
     display: grid;
@@ -120,7 +151,17 @@
   .content > .active-tab img{
     width: 6rem;
   }
+
+  .content button:hover {
+  border-radius: 10px;
+  transform: scale(1.3);
+  background-color: var(--accent-transperent);
+  transition: all 0.1s ease;
+}
+
+
 .bottom-nav {
+    
     display: flex;
     justify-content: space-around;
     align-items: center;
