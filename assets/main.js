@@ -64,29 +64,17 @@ function bodyLegsSwitch(selected_class) {
 }
 
 
-// Get the artboard element
-const artboard = document.querySelector('.Artboard');
+function downloadAvatar() {
+  var artboard = document.querySelector(".Artboard");
+  html2canvas(artboard).then(function(canvas) {
+    var link = document.createElement("a");
+    link.href = canvas.toDataURL("image/png");
+    link.download = "birdie-avatar.png";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  });
+}
 
-// Create a canvas element with the same dimensions as the artboard
-const canvas = document.createElement('canvas');
-canvas.width = artboard.offsetWidth;
-canvas.height = artboard.offsetHeight;
-
-// Get the canvas context
-const context = canvas.getContext('2d');
-
-// Draw the contents of the artboard onto the canvas
-context.Images(artboard.innerHTML, 0, 0, canvas.width, canvas.height);
-
-// Create a data URL from the canvas
-const dataURL = canvas.toDataURL();
-
-// Create a link element with the data URL as the href
-const link = document.createElement('a');
-link.href = dataURL;
-
-// Set the download attribute to specify the filename
-link.download = 'my-avatar.png';
-
-// Click the link to download the image
-link.click();
+var downloadButton = document.getElementById("download-btn");
+downloadButton.addEventListener("click", downloadAvatar);
