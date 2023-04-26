@@ -44,7 +44,7 @@
 
 /* AVATAR ELEMENTS BUTTONS */
 .content {
-  border-radius: 10px;
+  /* border-radius: 10px; */
   position: relative;
   margin-top: 29rem;
   width: 100%;
@@ -54,7 +54,7 @@
 }
 
 .content > .tab {
-  border-radius: 10px;
+  /* border-radius: 10px; */
   overflow-x: auto;
   overflow-y: hidden;
   display: flex;
@@ -78,7 +78,14 @@
   /* background-color: var(--accent-transperent); */
   transition: all 0.1s ease;
 }
-
+.content button:active {
+  /* border-radius: 10px; */
+  transform: scale(1.1);
+  /* background-color: var(--accent-transperent); */
+  /* background: radial-gradient(circle at center, var(--accent-2), transparent); */
+  transition: all 0.1s ease;
+  /* border-radius: 10px; */
+}
 
 @media (min-width: 450px) {
   .content .active-tab {
@@ -161,7 +168,7 @@
 
 
 .bottom-nav {
-    
+    border-radius: 10px;
     display: flex;
     justify-content: space-around;
     align-items: center;
