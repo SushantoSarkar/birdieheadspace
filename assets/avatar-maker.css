@@ -85,6 +85,66 @@
 }
 }
 
+@media (min-width: 1024px){
+
+  .Artboard{
+    position: absolute;
+    margin-top: var(--base);
+    top: 65%;
+    left: 74%;
+    transform: translate(-50%, -70%);
+    width: 29.7em;
+    height: 35.775rem;
+    background: rgba(253, 255, 142, 0.1);
+    z-index: 1;
+}
+
+  .content .active-tab{
+    width: 40%;
+    display: grid;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0px;
+    margin-top: -13rem;
+    height: 15rem;
+    row-gap: 0rem;
+    /* flex-wrap: wrap;
+    flex-direction: column; */
+    padding-left: 9.2rem;
+    align-items: end;
+    justify-content: center;
+    justify-items: start;
+}
+
+  .content > .active-tab img{
+    width: 6rem;
+  }
+.bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 6rem;
+    background: var(--accent-transperent);
+    position: fixed;
+    margin-left: 10%;
+    top: 10rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 35%;
+    /* z-index: 4; */
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.bottom-nav img {
+  width: 5rem;
+  height: 5rem;
+}
+  }
+
+
+
 /* .buttons-wrapper {
   width: 100%;
   overflow-x: scroll;

@@ -62,3 +62,31 @@ function bodyLegsSwitch(selected_class) {
     document.getElementById('legs-four').style.display = 'none';
     document.getElementById(selected_class).style.display = 'block';
 }
+
+
+// Get the artboard element
+const artboard = document.querySelector('.Artboard');
+
+// Create a canvas element with the same dimensions as the artboard
+const canvas = document.createElement('canvas');
+canvas.width = artboard.offsetWidth;
+canvas.height = artboard.offsetHeight;
+
+// Get the canvas context
+const context = canvas.getContext('2d');
+
+// Draw the contents of the artboard onto the canvas
+context.Images(artboard.innerHTML, 0, 0, canvas.width, canvas.height);
+
+// Create a data URL from the canvas
+const dataURL = canvas.toDataURL();
+
+// Create a link element with the data URL as the href
+const link = document.createElement('a');
+link.href = dataURL;
+
+// Set the download attribute to specify the filename
+link.download = 'my-avatar.png';
+
+// Click the link to download the image
+link.click();
